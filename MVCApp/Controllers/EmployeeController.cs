@@ -14,7 +14,6 @@ namespace MVCApp.Controllers
         }
         
         [Route("GetEmployee")]
-        [HttpPost]
         public IActionResult GetEmployee(EmployeeModel input)
         { 
             List<EmployeeModel>emp = getEmployee1(input);
@@ -51,7 +50,7 @@ namespace MVCApp.Controllers
             employeeModels.Add(employee3);  
             employeeModels.Add(employee4);
             employeeModels.Add(employee5);
-            if(input != null)
+            if(input != null && input.EmpId>0)
             {
                 
 

@@ -8,7 +8,7 @@
 
 @Html.ActionLink("Show All Employee","GetEmployee","Employee")
 @model EmployeeModel;
-@using (Html.BeginForm("GetEmployee", "Employee", FormMethod.Post))
+@using (Html.BeginForm("GetEmployee", "Employee"))
     {
         @Html.Label("First Name:")<br/>
         @Html.TextBoxFor(m=>m.FirstName);<br />
